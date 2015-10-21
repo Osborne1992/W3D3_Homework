@@ -8,7 +8,18 @@ body {
 }
 
 .content {
-  padding-left: 200px;
+  padding-left: 300px;
+  padding-right: 300px;
+}
+
+.goright {
+  text-align: right;
+  border-bottom: #004700 1px solid;
+}
+
+textarea {
+    width: 300px;
+    height: 150px;
 }
 
 nav ul {
@@ -34,13 +45,13 @@ dl {
 }
 dt {
   float: left;
-  width: 10%;
+  width: 20%;
   padding: 0;
   margin: 0
 }
 dd {
   float: none;
-  width: 90%;
+  width: 40%;
   padding: 0;
   margin: 0
 }

@@ -1,14 +1,12 @@
-<br />
-  <p>You've got a little list...</p>
-<br />
   <section>
     <% @items.each do |item| %>
+    <br />
       <dl>
-        <dt>Item: </dt>
+        <dt>\o/ --></dt>
         <dd><%= item['item'] %></dd>
       </dl>
       <p></p>
-      <a href="/items/<%= item['id'] %>" class="button">show</a>
+      <div class="goright"><a href="/items/<%= item['id'] %>" class="button">show</a></div>
       <p></p>
       <p></p>
     <% end %>
