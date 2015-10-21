@@ -16,10 +16,6 @@ get '/' do
 end
 
 get '/items' do
-  # Hint: Here's the line of code you would need to set a local variable 
-  #       with a SQL string to get all the items from the DB, but what are
-  #       you going to do with it?..
-  #
   sql = "SELECT * FROM items"
   @items = run_sql(sql)
 
@@ -35,7 +31,7 @@ post '/items' do
   details = params['details']
   sql = "insert into items (item, details) values ('#{item}', '#{details}')"
     run_sql(sql)
-  redirect to('/items') # or can you get the id of the record created by the insert, and redirect to that?
+  redirect to('/items')
 end
 
 get '/items/:id' do  
@@ -56,7 +52,6 @@ post '/items/:id' do
   sql = "update items set item = '#{item}', details = '#{details}' where id = #{params['id']}"
   
   run_sql(sql)
-  #redirect to('/items/#{id}')
   redirect to("/items/#{params[:id]}")
 end
 
