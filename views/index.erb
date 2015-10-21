@@ -4,9 +4,9 @@
   <section>
     <% @items.each do |item| %>
       <dl>
-        <dt>Item: </dt>
-        <dd><%= item['item'] %></dd>
+        <dt>Item: </dt><dd><%= item['item'] %></dd>
       </dl>
       <a href="/items/<%= item['id'] %>">show</a>
+      <p></p>
     <% end %>
   </section>
