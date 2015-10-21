@@ -1,0 +1,13 @@
+<center>
+<form method='post' action='/items/<%= @item['id'] %>'>
+  <dl>
+    <dt><label for='item'>Item:</label></dt>
+    <dd><input id='item' value='<%= @item['item'] %>' name='item' type='text' autofocus></dd>
+  </dl>
+  <dl>
+    <dt><label for='details'>Details:</label></dt>
+    <dd><textarea id='details' name='details'><%= @item['details'] %></textarea></dd>
+  </dl>
+  <button>Update Task</button>
+</form>
+</center>

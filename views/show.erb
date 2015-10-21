@@ -1,0 +1,18 @@
+<section>
+  <article>
+    <dl>
+      <dt>Item: </dt>
+      <dd><%= @item['item'] %></dd>
+    </dl>
+    <dl>
+      <dt>Details: </dt>
+      <dd><%= @item['details'] %></dd>
+    </dl>
+  </article>
+</section>
+<h3><a href="/items/<%= @item['id'] %>/edit">Edit</a> | 
+<form method='post' action='/items/<%= @item['id'] %>/delete'>
+<button>Delete</button></h3>  
+</form>
+
+
