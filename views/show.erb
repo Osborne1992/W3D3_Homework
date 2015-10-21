@@ -4,15 +4,16 @@
       <dt>Item: </dt>
       <dd><%= @item['item'] %></dd>
     </dl>
+    <br />
     <dl>
       <dt>Details: </dt>
       <dd><%= @item['details'] %></dd>
     </dl>
   </article>
 </section>
-<h3><a href="/items/<%= @item['id'] %>/edit">Edit</a> | 
+<br />
 <form method='post' action='/items/<%= @item['id'] %>/delete'>
-<button>Delete</button></h3>  
+<a href="/items/<%= @item['id'] %>/edit" class="button">Edit</a> | <button>Delete</button> 
 </form>
 
 
