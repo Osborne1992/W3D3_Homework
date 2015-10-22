@@ -1,20 +1,31 @@
 body {
-  background-color: #003300;
-  color: white;
+  background-color: orange;
+  color: black;
   text-align: left;
   width: 960px;
   margin: 0px auto 0px auto;
   font-family: Arial, Helvetica, 'Times New Roman';
 }
 
+.backcolor {
+  border-radius: 10px;
+  background: linear-gradient(yellow, yellow, orange);
+  width: 500px;
+  position:absolute;
+      top: 5%;
+      left: 50%;
+      width:30em;
+      margin-left: -15em;
+}
+
 .content {
-  padding-left: 275px;
-  padding-right: 275px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .goright {
   text-align: right;
-  border-bottom: #004700 1px solid;
+  border-bottom: black 1px solid;
 }
 
 textarea {
@@ -34,7 +45,7 @@ nav li {
 }
 
 a {
-  color: white;
+  color: black;
 }
 
 dl {
@@ -50,7 +61,7 @@ dt {
   margin: 0
 }
 dd {
-  float: none;
+  float: right;
   width: 80%;
   padding: 0;
   margin: 0
