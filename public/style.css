@@ -42,9 +42,9 @@ nav ul {
 nav li {
   display: inline;
   padding: 5px;
-  border: black 1px solid;
   background-color: white;
   border-radius: 5px;
+  padding: 3px 7px 3px 7px;
 }
 
 a {
