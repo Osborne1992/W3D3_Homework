@@ -43,6 +43,8 @@ nav li {
   display: inline;
   padding: 5px;
   border: black 1px solid;
+  background-color: white;
+  border-radius: 5px;
 }
 
 a {
